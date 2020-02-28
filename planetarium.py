@@ -1,12 +1,11 @@
-class Planets(Object):
+class planets(object):
 
-    # constructor
-    def __init__(size, type, composition):
-        self.size = size
-        self.type = type
-        self.composition = composition
+    def __init__(self, planet, description, moons, tempature):
+        self.planet = planet
+        self.description = description
+        self.moons = moons
+        self.tempature = tempature
 
-        # to string method
-        def __str__(self):
-            return f"Make: {self.size}"
-
+    def __str__(self):
+        return f"Planet: {self.planet} \nDescription: {self.description} \nMoons: {self.moons} \nAverage Tempature: {self.tempature} degrees"
+    
